@@ -173,8 +173,8 @@ hamburger menu thanks to briancodex
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80%;
-      height: 80px;
+      width: 40%;
+      height: 70px;
       margin: 0;
     }
   
@@ -220,6 +220,7 @@ hamburger menu thanks to briancodex
 
     .hero h1 {
         color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .hero .btn {
         background-color: var(--fifth-color);
@@ -250,3 +251,31 @@ hamburger menu thanks to briancodex
         /* border: 3px solid white; */
         border-radius: 4px;
     }
+
+    /* sign up form */
+    .form h1 {
+        margin-bottom: 40px;
+    }
+    
+    label {
+        color: #333;
+    }
+    
+    .btn-send {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        width: 80%;
+        margin-left: 3px;
+        }
+    .help-block.with-errors {
+        color: #ff5050;
+        margin-top: 5px;
+    
+    }
+    
+    .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
