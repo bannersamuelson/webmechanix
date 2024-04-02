@@ -309,13 +309,15 @@ h1 {
     
         /* footer section css */
 
-      
-
-
+  
         i {
           color: #000;
         }
         i:hover {
           cursor: pointer;
           color: #5c7c7c;
+        }
+
+        .footerImg {
+          max-height: 4rem;
         }
