@@ -2,7 +2,9 @@
 color pallete from https://color.romanuke.com/tsvetovaya-palitra-2398/
 hamburger menu thanks to briancodex
 Photo by <a href="https://unsplash.com/@neelabh_raj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Neelabh Raj</a> on <a href="https://unsplash.com/photos/red-and-black-power-tool-cw1914zDHUs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
+Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rick Gebhardt</a> on <a href="https://unsplash.com/photos/black-porsche-911-parked-near-building-during-daytime-n52K1_3aZDE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+ Photo by <a href="https://unsplash.com/@garbera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dominik Garbera</a> on <a href="https://unsplash.com/photos/black-and-silver-car-stereo-2DrK_hrVsrk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   
 */
 
 :root {
@@ -18,6 +20,7 @@ Photo by <a href="https://unsplash.com/@neelabh_raj?utm_content=creditCopyText&u
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    
   }
   
   .navbar {
@@ -269,3 +272,30 @@ Photo by <a href="https://unsplash.com/@neelabh_raj?utm_content=creditCopyText&u
       background-color:#fd5e2f;
       color: #fff;
       }
+
+      .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+
+    .button__card {
+             font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        padding: 0.75rem 1rem;
+        background-color:var(--fifth-color);
+        color: #fff;
+        text-decoration: none;
+        }
+    
+    
+
+    .button__card:hover {
+             font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        padding: 0.75rem 1rem;
+        background-color: var(--fourth-color);
+        color: #fff;
+        }
+    
+    
