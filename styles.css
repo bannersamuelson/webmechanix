@@ -3,8 +3,8 @@ color pallete from https://color.romanuke.com/tsvetovaya-palitra-2398/
 hamburger menu thanks to briancodex
 Photo by <a href="https://unsplash.com/@neelabh_raj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Neelabh Raj</a> on <a href="https://unsplash.com/photos/red-and-black-power-tool-cw1914zDHUs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rick Gebhardt</a> on <a href="https://unsplash.com/photos/black-porsche-911-parked-near-building-during-daytime-n52K1_3aZDE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
- Photo by <a href="https://unsplash.com/@garbera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dominik Garbera</a> on <a href="https://unsplash.com/photos/black-and-silver-car-stereo-2DrK_hrVsrk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   
+Photo by <a href="https://unsplash.com/@garbera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dominik Garbera</a> on <a href="https://unsplash.com/photos/black-and-silver-car-stereo-2DrK_hrVsrk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
 */
 
 :root {
@@ -16,13 +16,16 @@ Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
-    
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
   
+}
+h1 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
   .navbar {
     background: #000;
     height: 80px;
@@ -179,7 +182,7 @@ Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText
       height: 70px;
       margin: 0;
     }
-  
+    
     #mobile-menu {
       position: absolute;
       top: 20%;
@@ -222,7 +225,6 @@ Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText
 
     .hero h1 {
         color: #fff;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .hero .btn {
         background-color: var(--fifth-color);
@@ -286,6 +288,7 @@ Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText
         background-color:var(--fifth-color);
         color: #fff;
         text-decoration: none;
+        border-radius: 4px;
         }
     
     
@@ -297,5 +300,4 @@ Photo by <a href="https://unsplash.com/@rick_gebhardt?utm_content=creditCopyText
         background-color: var(--fourth-color);
         color: #fff;
         }
-    
     
