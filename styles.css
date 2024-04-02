@@ -19,7 +19,7 @@ hamburger menu thanks to briancodex
   }
   
   .navbar {
-    background: #fff;
+    background: #000;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ hamburger menu thanks to briancodex
   }
   
   .navbar__links {
-    color: #000;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,12 +133,12 @@ hamburger menu thanks to briancodex
     }
   
     .navbar__menu.active {
-      background: #fff;
+      background: #000;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 50vh;
+      height: 60vh;
       font-size: 1.6rem;
     }
   
@@ -151,7 +151,7 @@ hamburger menu thanks to briancodex
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background: #000;
+      background: white;
     }
   
     .navbar__item {
@@ -222,7 +222,7 @@ hamburger menu thanks to briancodex
         color: #fff;
     }
     .hero .btn {
-        background-color: #fd9001;
+        background-color: var(--fifth-color);
         display: block;
         width: 300px;
         padding: 1em;
@@ -232,21 +232,21 @@ hamburger menu thanks to briancodex
         color: white;
         text-decoration: none;
         font-size: 1.5em;
-        border: 3px solid white;
-        border-radius: 20px;
+        /* border: 3px solid white; */
+        border-radius: 4px;
     }
 
     .hero .btn:hover {
-        background-color: #fd5e2f;
+        background-color: var(--fourth-color);
         display: block;
         width: 300px;
-        padding: 1em;
+        border-radius: 4px;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         color: white;
         text-decoration: none;
         font-size: 1.5em;
-        border: 3px solid white;
-        border-radius: 20px;
+        /* border: 3px solid white; */
+        border-radius: 4px;
     }
