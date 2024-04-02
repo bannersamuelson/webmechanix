@@ -1,6 +1,8 @@
 /* 
 color pallete from https://color.romanuke.com/tsvetovaya-palitra-2398/
 hamburger menu thanks to briancodex
+Photo by <a href="https://unsplash.com/@neelabh_raj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Neelabh Raj</a> on <a href="https://unsplash.com/photos/red-and-black-power-tool-cw1914zDHUs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
 */
 
 :root {
@@ -33,7 +35,7 @@ hamburger menu thanks to briancodex
   .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
     z-index: 1;
     width: 100%;
     margin-right: auto;
@@ -116,7 +118,7 @@ hamburger menu thanks to briancodex
       z-index: 1;
       width: 100%;
       max-width: 1300px;
-      padding: 0;
+      padding-left: 50px;
     }
   
     .navbar__menu {
@@ -141,10 +143,7 @@ hamburger menu thanks to briancodex
       height: 60vh;
       font-size: 1.6rem;
     }
-  
-    #navbar__logo {
-      padding-left: 25px;
-    }
+
   
     .navbar__toggle .bar {
       width: 25px;
@@ -252,30 +251,21 @@ hamburger menu thanks to briancodex
         border-radius: 4px;
     }
 
-    /* sign up form */
-    .form h1 {
-        margin-bottom: 40px;
+    /* contact us form */
+    .login {
+      min-height: 100vh;
     }
     
-    label {
-        color: #333;
+    .bg-image {
+      background-image: url('/images/neelabh-raj-cw1914zDHUs-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
     }
-    
-    .btn-send {
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        width: 80%;
-        margin-left: 3px;
-        }
-    .help-block.with-errors {
-        color: #ff5050;
-        margin-top: 5px;
-    
-    }
-    
-    .card{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
+  
+    .btn-login {
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
+      padding: 0.75rem 1rem;
+      background-color:#fd5e2f;
+      color: #fff;
+      }
