@@ -1,5 +1,6 @@
 /* 
 color pallete from https://color.romanuke.com/tsvetovaya-palitra-2398/
+hamburger menu thanks to briancodex
 */
 
 :root {
@@ -202,3 +203,50 @@ color pallete from https://color.romanuke.com/tsvetovaya-palitra-2398/
     }
   }
   
+  /* Hero section images
+     */
+     .hero {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/images/Mercedes-interior.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .hero h1 {
+        color: #fff;
+    }
+    .hero .btn {
+        background-color: #fd9001;
+        display: block;
+        width: 300px;
+        padding: 1em;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        border: 3px solid white;
+        border-radius: 20px;
+    }
+
+    .hero .btn:hover {
+        background-color: #fd5e2f;
+        display: block;
+        width: 300px;
+        padding: 1em;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        border: 3px solid white;
+        border-radius: 20px;
+    }
