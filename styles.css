@@ -8,319 +8,328 @@ Photo by <a href="https://unsplash.com/@garbera?utm_content=creditCopyText&utm_m
 */
 
 :root {
-  --primary-color: #5c7c7c;
-  --secondary-color: #72b8ca;
-  --third-color: #fed3a6;
-  --fourth-color: #fd9001;
-  --fifth-color: #fd5e2f;
+--primary-color: #5c7c7c;
+--secondary-color: #72b8ca;
+--third-color: #fed3a6;
+--fourth-color: #fd9001;
+--fifth-color: #fd5e2f;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
-  
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Kumbh Sans', sans-serif;
+
 }
 h1 {
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- }
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-  .navbar {
-    background: #000;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-    z-index: 1;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  
-  #navbar__logo {
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .navbar__item {
-    height: 80px;
-    display: flex;
-  }
-  
-  .navbar__links {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-  }
-  
-  .navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-  }
-  
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: var(--fifth-color);
-    color: #fff;
-  }
-  
-  .button:hover {
-    background: var(--fourth-color);
-    transition: all 0.3s ease;
-  }
-  
-  .navbar__links:hover {
-    color: var(--primary-color);
-    transition: all 0.3s ease;
-  }
+.navbar i {
+  color: #f5f5f4;
+  margin: 0;
+}
+.navbar {
+background: #000;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+position: sticky;
+top: 0;
+z-index: 999;
+}
 
-  @media screen and (max-width: 1200px) {
-    .navbar__container {
-      display: flex;
-      justify-content: space-between;
-      height: 80px;
-      z-index: 1;
-      width: 100%;
-      max-width: 1300px;
-      padding: 0;
-    }
-  
-    .navbar__menu {
-      display: grid;
-      grid-template-columns: auto;
-      margin: 0;
-      width: 100%;
-      position: absolute;
-      top: -1000px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      height: 50vh;
-      z-index: -1;
-    }
-  
-    .navbar__menu.active {
-      background: #000;
-      top: 100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 99;
-      height: 60vh;
-      font-size: 1.6rem;
-    }
+.navbar__container {
+display: flex;
+justify-content: space-between;
+height: 80px;
+z-index: 1;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+padding:0;
+}
 
-  
-    .navbar__toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background: white;
-    }
-  
-    .navbar__item {
-      width: 100%;
-    }
-  
-    .navbar__links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .navbar__btn {
-      padding-bottom: 2rem;
-    }
-  
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40%;
-      height: 70px;
-      margin: 0;
-    }
-    
-    #mobile-menu {
-      position: absolute;
-      top: 20%;
-      right: 5%;
-      transform: translate(5%, 20%);
-    }
-  
-    .navbar__toggle .bar {
-      display: block;
-      cursor: pointer;
-    }
-  
-    #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    #mobile-menu.is-active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-  
-    #mobile-menu.is-active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  }
-  
-  /* Hero section images
-     */
-     .hero {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/images/Mercedes-interior.png');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
+#navbar__logo {
+padding-right: 25px;
+padding-left: 25px;
+background-size: 100%;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
 
-    .hero h1 {
-        color: #fff;
-    }
-    .hero .btn {
-        background-color: var(--fifth-color);
-        display: block;
-        width: 300px;
-        padding: 1em;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        text-decoration: none;
-        font-size: 1.5em;
-        /* border: 3px solid white; */
-        border-radius: 4px;
-    }
+.navbar__menu {
+display: flex;
+align-items: center;
+list-style: none;
+text-align: center;
+}
 
-    .hero .btn:hover {
-        background-color: var(--fourth-color);
-        display: block;
-        width: 300px;
-        border-radius: 4px;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        text-decoration: none;
-        font-size: 1.5em;
-        /* border: 3px solid white; */
-        border-radius: 4px;
-    }
+.navbar__item {
+height: 80px;
+display: flex;
+}
 
-    /* contact us form */
+.navbar__links {
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+}
 
-    .contactForm {
-      background-color: #f5f5f4;
-    }
+.navbar__btn {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 1rem;
+width: 100%;
+}
+
+.button {
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+padding: 10px 20px;
+height: 100%;
+width: 100%;
+border: none;
+outline: none;
+border-radius: 4px;
+background: var(--fifth-color);
+color: #fff;
+}
+
+.button:hover {
+background: var(--fourth-color);
+transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+color: var(--primary-color);
+transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+.navbar__container {
+display: flex;
+justify-content: space-between;
+height: 80px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+padding: 0;
+}
+
+.navbar__menu {
+display: grid;
+grid-template-columns: auto;
+margin: 0;
+width: 100%;
+position: absolute;
+top: -1000px;
+opacity: 1;
+transition: all 0.5s ease;
+height: 50vh;
+z-index: -1;
+}
+
+.navbar__menu.active {
+background: #000;
+top: 100%;
+opacity: 1;
+transition: all 0.5s ease;
+z-index: 99;
+height: 60vh;
+font-size: 1.6rem;
+}
 
 
-    .login {
-      min-height: 100vh;
-    }
-    
-    .bg-image {
-      background-image: url('/images/neelabh-raj-cw1914zDHUs-unsplash.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .btn-login {
-      font-size: 0.9rem;
-      letter-spacing: 0.05rem;
-      padding: 0.75rem 1rem;
-      background-color:#fd5e2f;
-      color: #fff;
-      }
+.navbar__toggle .bar {
+width: 25px;
+height: 3px;
+margin: 5px auto;
+transition: all 0.3s ease-in-out;
+background: white;
+}
 
-      .card-img-top {
-        width: 100%;
-        height: 15vw;
-        object-fit: cover;
-    }
+.navbar__item {
+width: 100%;
+}
 
-    .button__card {
-             font-size: 0.9rem;
-        letter-spacing: 0.05rem;
-        padding: 0.75rem 1rem;
-        background-color:var(--fifth-color);
-        color: #fff;
-        text-decoration: none;
-        border-radius: 4px;
-        }
-    
-    
+.navbar__links {
+text-align: center;
+padding: 2rem;
+width: 100%;
+display: table;
+}
 
-    .button__card:hover {
-             font-size: 0.9rem;
-        letter-spacing: 0.05rem;
-        padding: 0.75rem 1rem;
-        background-color: var(--fourth-color);
-        color: #fff;
-        }
-    
-        /* footer section css */
+.navbar__btn {
+padding-bottom: 2rem;
+}
 
-          .footerCSS {
-            background-color: #f5f5f4;
-          }
-  
-        i {
-          color: #000;
-        }
-        i:hover {
-          cursor: pointer;
-          color: #5c7c7c;
-        }
+.button {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40%;
+height: 70px;
+margin: 0;
+}
 
-        .footerImg {
-          max-height: 4rem;
-        }
+#mobile-menu {
+position: absolute;
+top: 20%;
+right: 5%;
+transform: translate(5%, 20%);
+}
+
+.navbar__toggle .bar {
+display: block;
+cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2) {
+opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+/* Hero section images
+*/
+.hero {
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/images/Mercedes-interior.png');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+.hero h1 {
+color: #fff;
+}
+.hero .btn {
+background-color: var(--fifth-color);
+display: block;
+width: 300px;
+padding: 1em;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+color: white;
+text-decoration: none;
+font-size: 1.5em;
+/* border: 3px solid white; */
+border-radius: 4px;
+}
+
+.hero .btn:hover {
+background-color: var(--fourth-color);
+display: block;
+width: 300px;
+border-radius: 4px;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+color: white;
+text-decoration: none;
+font-size: 1.5em;
+/* border: 3px solid white; */
+border-radius: 4px;
+}
+
+/* contact us form */
+.contactForm {
+background-color: #f5f5f4;
+}
+
+
+.login {
+min-height: 100vh;
+}
+
+.bg-image {
+background-image: url('/images/neelabh-raj-cw1914zDHUs-unsplash.jpg');
+background-size: cover;
+background-position: center;
+}
+
+.btn-login {
+font-size: 0.9rem;
+letter-spacing: 0.05rem;
+padding: 0.75rem 1rem;
+background-color:#fd5e2f;
+color: #fff;
+}
+
+.serivceSection {
+  padding: 75px 0;
+}
+.card-img-top {
+width: 100%;
+height: 25vw;
+object-fit: cover;
+}
+
+.button__card {
+font-size: 0.9rem;
+letter-spacing: 0.05rem;
+padding: 0.75rem 1rem;
+background-color:var(--fifth-color);
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+}
+
+
+.button__card:hover {
+font-size: 0.9rem;
+letter-spacing: 0.05rem;
+padding: 0.75rem 1rem;
+background-color: var(--fourth-color);
+color: #fff;
+}
+
+/* footer section css */
+.footerCSS {
+background-color: #f5f5f4;
+}
+
+i {
+color: #000;
+}
+i:hover {
+cursor: pointer;
+color: #5c7c7c;
+}
+
+.footerImg {
+max-height: 4rem;
+}
+
+.bottomFooter {
+ background-color: #f5f5f4;
+}
