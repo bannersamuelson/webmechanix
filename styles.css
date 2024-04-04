@@ -243,7 +243,13 @@ background-repeat: no-repeat;
 
 .hero h1 {
 color: #fff;
+font-size: 3rem;
 }
+
+#ex_in_h1 {
+  font-size: 5rem;
+}
+
 .hero .btn {
 background-color: var(--fifth-color);
 display: block;
@@ -258,6 +264,7 @@ font-size: 1.5em;
 /* border: 3px solid white; */
 border-radius: 4px;
 }
+  
 
 .hero .btn:hover {
 background-color: var(--fourth-color);
