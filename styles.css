@@ -133,6 +133,10 @@ color: var(--primary-color);
 transition: all 0.3s ease;
 }
 
+.nav_icons:hover {
+  color: #5c7c7c;
+}
+
 @media screen and (max-width: 1200px) {
 .navbar__container {
 display: flex;
